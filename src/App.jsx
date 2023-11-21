@@ -1,19 +1,18 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
+import "./App.css";
+import BasicFormOne from "./components/BasicFormOne";
+import BasicFormTwo from "./components/BasicFormTwo";
 
-const App= ()=> {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [count, setCount] = useState(0);
 
   return (
-    
-      
-        
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    
-  )
-}
+    <>
+      <BasicFormOne />
+      <BasicFormTwo />
+    </>
+  );
+};
 
-export default App
+export default App;
